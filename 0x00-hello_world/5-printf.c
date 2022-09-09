@@ -8,7 +8,7 @@
  */
 int main(void)
 { 
-	char mystring = ("with proper grammar, but the outcome
+	char mystring[] = ("with proper grammar, but the outcome
 		       	is a piece of art,");
 	printf(mystring);
 	return (0);
