@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 /**
- * main:point of entry
+ * main- generates a random number
+ * @n: the number to be generated
  *
- * return:always return 0
+ * Description: checks if the generated number is greater than zero
+ * Return:always return 0
  */
 int main(void)
 {
