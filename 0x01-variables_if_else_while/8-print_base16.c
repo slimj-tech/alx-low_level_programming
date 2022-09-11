@@ -6,8 +6,12 @@
  */
 int main(void)
 {
-	char n;
+	char nums;
 
-	putchar("%x\n", n);
+	for (nums = 0; nums < 10; nums++)
+		putchar(nums);
+	for (nums = a; nums < g; nums++)
+		putchar(nums);
+	putchar('\n');
 	return (0);
 }
