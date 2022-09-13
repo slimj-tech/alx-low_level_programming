@@ -2,7 +2,7 @@
 /**
  * main-number combination
  *
- * Result: always success
+ * Return: always success
  */
 int main(void)
 {
@@ -15,8 +15,8 @@ int main(void)
 		{
 			if (a < b)
 			{
-				putchar('a');
-				putchar('b');
+				putchar(a);
+				putchar(b);
 
 			if (a != '8')
 			{
