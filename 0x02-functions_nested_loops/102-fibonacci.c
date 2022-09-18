@@ -18,7 +18,7 @@ int main(void)
 		}
 	       	else
 		{
-			printf("%ld\n", );
+			printf("%ld\n", a );
 		}
 		c = a + b;
 		a = b;
