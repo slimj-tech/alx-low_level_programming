@@ -1,28 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * main -prints the sum of natural numbers
  * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	long int i, j, k, next;
+	int n;
 
-	j = 1;
-	k = 2;
+	int sum = 0;
 
-	for (i = 1; i <= 50; ++i)
+	for (n = 0; n < 1024; n++)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld, ", j);
-		} else
-		{
-			printf("%ld\n", j);
-		}
-		next = j + k;
-		j = k;
-		k = next;
+		if ((n % 3 == 0) || (n % 5 == 0))
+			sum = sum + n;
 	}
-	return(0);
+	printf("%d\n", sum);
+	return (0);
 }
