@@ -10,11 +10,13 @@ int main(void)
 
 	int a = 1, b = 2;
 
-	printf("%d, %d", a, b);
+	printf("%d, ", a);
+	printf("%d, ", b);
 	for (i = 3; i <= 50; i++)
 	{
 		int c = a + b;
-		printf("%d", c);
+
+		printf("%d, ", c);
 		a = b;
 		b = c;
 		c = a + b;
