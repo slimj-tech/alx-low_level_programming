@@ -12,7 +12,7 @@ int main(void)
 
 	printf("%d, ", a);
 	printf("%d, ", b);
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 48; i++)
 	{
 		int c = a + b;
 
