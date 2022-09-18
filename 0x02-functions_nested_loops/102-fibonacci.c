@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - finds and prints the sum of the even-valued terms
+ * main - prints fibinacci numbers less than 50
  * followed by a new line
  * Return: Always 0 (Success)
  */
@@ -8,21 +8,16 @@ int main(void)
 {
 	int i;
 
-	unsigned long int j, k, next, sum;
-	j = 1;
-	k = 2;
-	sum = 0;
+	int a = 1, b = 2, c = a + b;
 
-	for (i = 1; i <= 33; ++i)
-	{
-		if (j < 4000000 && (j % 2) == 0)
+	printf("%d, %d", a, b)
+		for (i = 3; i <= 50; i++)
 		{
-			sum = sum + j;
+			c = a + b;
+			printf("%d", c);
+			a = b;
+			b = c;
+			c = a + b;
 		}
-		next = j + k;
-		j = k;
-		k = next;
-	}
-	printf("%lu\n", sum);
 	return (0);
 }
