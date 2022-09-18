@@ -8,16 +8,16 @@ int main(void)
 {
 	int i;
 
-	int a = 1, b = 2, c = a + b;
+	int a = 1, b = 2;
 
-	printf("%d, %d", a, b)
-		for (i = 3; i <= 50; i++)
-		{
-			c = a + b;
-			printf("%d", c);
-			a = b;
-			b = c;
-			c = a + b;
-		}
+	printf("%d, %d", a, b);
+	for (i = 3; i <= 50; i++)
+	{
+		int c = a + b;
+		printf("%d", c);
+		a = b;
+		b = c;
+		c = a + b;
+	}
 	return (0);
 }
