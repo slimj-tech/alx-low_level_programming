@@ -16,9 +16,9 @@ int main(void)
 		{
 			printf("%ld, ", a);
 		}
-	       	else
+		else
 		{
-			printf("%ld\n", a );
+			printf("%ld\n", a);
 		}
 		c = a + b;
 		a = b;
