@@ -4,23 +4,18 @@
  *Return: void
  *@s: string
  */
+
 void print_rev(char *s)
 {
 	int c = 0;
 
-	int c2 = 0;
-
-	while (s[c] != 0)
+	while (s[c] != '\0')
 	{
 		c++;
 	}
-	while (c2 <= c - 1)
+	for (c -= 1; c >= 0; c--)
 	{
-		char t1 = s[c2];
-		char t2 = s[c - 1];
-		s[c2] = t2;
-		s[c - 1] = t1;
-		c2++;
-		c--;
+		_putchar(s[c]);
 	}
+	_putchar('\n');
 }
