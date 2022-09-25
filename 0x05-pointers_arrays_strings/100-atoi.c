@@ -1,24 +1,43 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * _strcpy - prints string
- * Return: length of string
- * @dest: destiny string
- * @src: source string
+ *_atoi - sonvert string to int
+ *Return: the int
+ *@s: string
  */
-char *_strcpy(char *dest, char *src)
+int _atoi(char *s)
 {
-	int s = 0;
+	int size = 0, i, j, sign = 1;
 
-	int i;
+	unsigned int number = 0;
 
-	while (src[s] != 0)
+	while (s[size] != 0)
 	{
-		s++;
+		size++;
 	}
+	for (i = 0; i < size; i++)
+	{
+		if (s[i] >= 48 && s[i] <= 57)
+		{
+			unsigned int pow = 1;
 
-	dest[s] = '\0';
-	for (i = 0; i < s; i++)
-		dest[i] = src[i];
-
-	return (dest);
+			j = i;
+			while (s[j] >= 48 && s[j] <= 57)
+			{
+				j++;
+			}
+			j--;
+			while (j >= i)
+			{
+				number += (s[j] - '0') * pow;
+				pow *= 10;
+				j--;
+			}
+			break;
+		}
+		else if (s[i] == 45)
+			sign = -sign;
+	}
+	if (sign < 0)
+		number = -number;
+	return (number);
 }
