@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *_atoi - sonvert string to int
  *Return: the int
