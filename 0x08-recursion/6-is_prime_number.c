@@ -1,5 +1,4 @@
-#include "main
-.h"
+#include "main.h"
 /**
  * is_prime_number - is prime
  * @n: number
