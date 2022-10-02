@@ -8,7 +8,7 @@
 
 int is_palindrome(char *s)
 {
-	return(pali(s, s + _strlen_recursion(s) - 1));
+	return (pali(s, s + _strlen_recursion(s) - 1));
 }
 /**
  *pali - is palindrome
@@ -20,11 +20,11 @@ int is_palindrome(char *s)
 int pali(char *s, char *e)
 {
 	if (*s != *e)
-		return(0);
-	else if (*s >= *e)
-		return(1);
+		return (0);
+	else if (s >= e)
+		return (1);
 	else
-		return(pali(s + 1, e - 1));
+		return (pali(s + 1, e - 1));
 }
 /**
  *_strlen_recursion - return the length of a string
@@ -36,5 +36,5 @@ int _strlen_recursion(char *s)
 
 	if (*s == 0)
 		return (0);
-	return(1 + _strlen_recursion(s + 1));
+	return (1 + _strlen_recursion(s + 1));
 }
