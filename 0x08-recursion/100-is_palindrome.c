@@ -24,7 +24,7 @@ int pali(char *s, char *e)
 	else if (*s >= *e)
 		return(1);
 	else
-		return(s + 1, e -1);
+		return(pali(s + 1, e - 1));
 }
 /**
  *_strlen_recursion - return the length of a string
@@ -36,5 +36,5 @@ int _strlen_recursion(char *s)
 
 	if (*s == 0)
 		return (0);
-	return(1 + _strlen(s + 1));
+	return(1 + _strlen_recursion(s + 1));
 }
