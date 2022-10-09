@@ -8,7 +8,7 @@
  * @strtol: amaghim
  *Return: 0
  */
-int main(int argc, char *argv[]i)
+int main(int argc, char *argv[])
 {
 	int i;
 
