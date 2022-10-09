@@ -5,6 +5,7 @@
  * main - multiplies args
  * @argc: amount of args
  * @argv: pointer to pointers array
+ * @strtol: amaghim
  *Return: 0
  */
 int main(int argc, char *argv[])
