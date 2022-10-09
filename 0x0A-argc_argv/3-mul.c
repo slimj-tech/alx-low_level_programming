@@ -8,11 +8,12 @@
  * @strtol: amaghim
  *Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]i)
 {
 	int i;
-	int result = 1;
 
+	int result = 1;
+	
 	for (i = 1; i < argc; i++)
 	{
 		if (argc < 3)
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			int x = strtol(argv[i], NULL, 10);
+
 			result = result * x;
 		}
 	}
