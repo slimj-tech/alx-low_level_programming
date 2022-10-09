@@ -3,10 +3,10 @@
 #include <stdlib.h>
 /**
  * main - multiplies args
- * Return: 0
  * @argc: amount of args
  * @argv: pointer to pointers array
- */
+ *Return: 0
+ * /
 int main(int argc, char *argv[])
 {
 	int i;
